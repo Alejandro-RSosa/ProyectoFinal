@@ -76,9 +76,7 @@
             margin-left: 15px;
             padding-bottom: 5px;
         }
-    }
-            
-    
+    }    
 }
 @media (max-width: 720px) {
     .header {
@@ -140,6 +138,6 @@
         @include display-direction-justify(flex, column, center);        
     }    
     .footer-parrafo > p {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 }
