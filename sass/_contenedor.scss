@@ -1,0 +1,138 @@
+@mixin display-direction-justify ($display, $direction, $justify){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    column-gap: 10px;
+    row-gap: 10px;
+
+    .contenido {
+        background: $grisClaro;
+        border-radius: 5px;    
+        font-family: $fuente-parrafos;
+    }
+    .contexto {
+        background: $grisClaro;
+        border-radius: 5px;    
+        font-family: $fuente-parrafos;
+    }
+    .navegacion {
+        background: $gris;
+        border-radius: 5px; 
+    }
+    .sidebar {
+        background: $gris;
+        border-radius: 5px;
+        height: auto;
+        img {
+            width: 90%;
+        }
+    }
+    .footer {
+        background: $negro;
+        font-family: $fuente;
+        border-radius: 5px; 
+    }
+}
+
+.header {
+    grid-column: span 3;
+    grid-row: 1;
+    height: 150px;
+    @include display-direction-justify(flex, row, space-evenly);
+    align-items: center;
+    background-color: $negro;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, black, $gris);
+
+    img {
+        width: 100px;
+    }
+    & a:hover > h1 {
+        color: $naranja;
+    }
+    .sauron {
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+.navegacion {
+    height: auto;
+    padding: 5px 0;
+    grid-row: 2;
+    grid-column: span 3;
+    @include display-direction-justify(flex, row, space-around);        
+    font-family: $fuente;
+
+    a {
+        color: $color-secundario;
+        font-size: 2.6rem;
+    }
+    a:hover {
+        background-color: $color-secundario;
+        color: $azul;
+        border-radius: 5px;
+    }
+}
+
+.contenido {
+    grid-column: span 2;
+    grid-row: 3;
+    padding: 15px 0;
+}
+.contexto {
+    grid-column: span 3;
+    grid-row: 4;
+    padding: 15px 0;
+}
+.sidebar {
+    grid-column: 3;
+    grid-row: 3;
+    @include display-direction-justify(flex, column, space-evenly);    
+    align-items: center;
+
+    h3 {
+        color: $naranja;
+        padding-bottom: 10px;
+    }
+    img {
+        width: 150px;
+    }
+}
+.footer {
+    grid-column: span 3;
+    grid-row: 5;
+    @include display-direction-justify(flex, row, space-around);    
+    align-items: center;
+    height: auto;
+
+    .footer-parrafo {
+        font-size: 2rem;
+        color: $color-primario;
+    }
+    img {
+        width: 80px;
+        border-radius: 5px;
+    }
+    .redes img {
+        width: 70px;
+        padding-right: 10px;
+    }
+}
+.contenido__enlace {
+    color: $azul;
+    font-weight: bold;
+}
+.negrita {
+    font-weight: bold;
+}

@@ -1,0 +1,53 @@
+    
+    $color-primario: #ecc104;
+    $color-secundario: #e7da62;
+    $blanco: #cdd5ec;
+    $negro: rgba(0, 0, 0, 0.85);
+    $grisClaro: rgba(153, 143, 121, 0.95);
+    $azul: #12203e;
+    $gris: rgba(56, 53, 41, 0.9);
+    $naranja: #ff8000;
+
+    $fuente: 'Courgette', cursive;
+    $fuente-parrafos: 'Merienda', cursive;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {    
+    font-size: 62.5%;
+}
+body {    
+    background-image: url(./img/lord-rings-hd-wallpapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;    
+}
+p {
+    padding: 10px;
+    margin: 10px;
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 5rem;
+    color: $color-primario;
+    font-family: $fuente;
+}
+h2, h3, h4 {
+    color: $azul;
+    font-family: $fuente;
+}
+h2 {
+    font-size: 3.8rem;
+}
+h3 {
+    font-size: 2.8rem;
+}
+h4 {
+    font-size: 2rem;
+}

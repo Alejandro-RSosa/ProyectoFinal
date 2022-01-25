@@ -1,0 +1,106 @@
+.contenedor .contexto__libros {
+    @include display-direction-justify(flex, row, space-evenly);
+}
+.contexto__libros {
+    h4 {
+        padding: 20px 0;
+    }
+    img {
+        width: 200px;
+        height: 350px;
+        margin-bottom: 10px;
+    }
+}
+.sidebar__libros {
+    color: $blanco;
+    font-size: 2rem;
+    text-align: center;
+    font-family: $fuente;
+    h3 {
+        padding: 20px 0;
+    }
+    .lista {
+        text-align: left;
+        list-style-type: disc;
+        margin: 0px 25px;
+
+        .lista--lotr li {
+            margin-left: 35px;
+        }
+    }
+    .sidebar__img > img {
+        margin-bottom: 5px;
+    }
+}
+.peliculas--1 {
+    h3 {
+        padding: 10px 0;
+    }
+    iframe {
+        width: 60%;    
+   }
+}
+.peliculas--2 {
+    @extend .peliculas--1;
+}
+.peliculas--3 {
+    @extend .peliculas--1;
+}
+
+.contacto {
+    h2 {
+        margin: 15px 0;
+    }
+
+    img {
+        width: 85%;    
+        opacity: 0.88;
+        border-radius: 5px;
+    }
+}
+#span {
+    color: $naranja;
+}
+.formulario {    
+    margin: 0 auto;
+    width: 75%;
+    padding: 10px;
+    border-radius: 5px;    
+}
+.campo__label {
+    text-align: center;
+    padding: 10px;
+    color: $azul;
+    font-family: $fuente;
+    font-size: 2rem;
+}
+.entrada {
+    height: 35px;
+    font-size: 1.8rem;
+}
+.entrada--text {
+    font-size: 1.8rem;
+}
+.boton {
+    display: inline-block;
+    justify-content: center;
+    font-family: $fuente;
+    color: $color-primario;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.boton--primario {
+    background-color: $negro;
+}
+
+

@@ -1,0 +1,567 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../img/lord-rings-hd-wallpapers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+}
+
+p {
+  padding: 10px;
+  margin: 10px;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #ecc104;
+  font-family: "Courgette", cursive;
+}
+
+h2, h3, h4 {
+  color: #12203e;
+  font-family: "Courgette", cursive;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+}
+
+.contenedor .contenido {
+  background: rgba(153, 143, 121, 0.95);
+  border-radius: 5px;
+  font-family: "Merienda", cursive;
+}
+
+.contenedor .contexto {
+  background: rgba(153, 143, 121, 0.95);
+  border-radius: 5px;
+  font-family: "Merienda", cursive;
+}
+
+.contenedor .navegacion {
+  background: rgba(56, 53, 41, 0.9);
+  border-radius: 5px;
+}
+
+.contenedor .sidebar {
+  background: rgba(56, 53, 41, 0.9);
+  border-radius: 5px;
+  height: auto;
+}
+
+.contenedor .sidebar img {
+  width: 90%;
+}
+
+.contenedor .footer {
+  background: rgba(0, 0, 0, 0.85);
+  font-family: "Courgette", cursive;
+  border-radius: 5px;
+}
+
+.header {
+  grid-column: span 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(56, 53, 41, 0.9)));
+  background-image: linear-gradient(to bottom, black, rgba(56, 53, 41, 0.9));
+}
+
+.header img {
+  width: 100px;
+}
+
+.header a:hover > h1 {
+  color: #ff8000;
+}
+
+.header .sauron {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.navegacion {
+  height: auto;
+  padding: 5px 0;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  grid-column: span 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Courgette", cursive;
+}
+
+.navegacion a {
+  color: #e7da62;
+  font-size: 2.6rem;
+}
+
+.navegacion a:hover {
+  background-color: #e7da62;
+  color: #12203e;
+  border-radius: 5px;
+}
+
+.contenido {
+  grid-column: span 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  padding: 15px 0;
+}
+
+.contexto {
+  grid-column: span 3;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  padding: 15px 0;
+}
+
+.sidebar {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar h3 {
+  color: #ff8000;
+  padding-bottom: 10px;
+}
+
+.sidebar img {
+  width: 150px;
+}
+
+.footer {
+  grid-column: span 3;
+  -ms-grid-row: 5;
+  grid-row: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+.footer .footer-parrafo {
+  font-size: 2rem;
+  color: #ecc104;
+}
+
+.footer img {
+  width: 80px;
+  border-radius: 5px;
+}
+
+.footer .redes img {
+  width: 70px;
+  padding-right: 10px;
+}
+
+.contenido__enlace {
+  color: #12203e;
+  font-weight: bold;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.contenedor .contexto__libros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contexto__libros h4 {
+  padding: 20px 0;
+}
+
+.contexto__libros img {
+  width: 200px;
+  height: 350px;
+  margin-bottom: 10px;
+}
+
+.sidebar__libros {
+  color: #cdd5ec;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Courgette", cursive;
+}
+
+.sidebar__libros h3 {
+  padding: 20px 0;
+}
+
+.sidebar__libros .lista {
+  text-align: left;
+  list-style-type: disc;
+  margin: 0px 25px;
+}
+
+.sidebar__libros .lista .lista--lotr li {
+  margin-left: 35px;
+}
+
+.sidebar__libros .sidebar__img > img {
+  margin-bottom: 5px;
+}
+
+.peliculas--1 h3, .peliculas--2 h3, .peliculas--3 h3 {
+  padding: 10px 0;
+}
+
+.peliculas--1 iframe, .peliculas--2 iframe, .peliculas--3 iframe {
+  width: 60%;
+}
+
+.contacto h2 {
+  margin: 15px 0;
+}
+
+.contacto img {
+  width: 85%;
+  opacity: 0.88;
+  border-radius: 5px;
+}
+
+#span {
+  color: #ff8000;
+}
+
+.formulario {
+  margin: 0 auto;
+  width: 75%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.campo__label {
+  text-align: center;
+  padding: 10px;
+  color: #12203e;
+  font-family: "Courgette", cursive;
+  font-size: 2rem;
+}
+
+.entrada {
+  height: 35px;
+  font-size: 1.8rem;
+}
+
+.entrada--text {
+  font-size: 1.8rem;
+}
+
+.boton {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Courgette", cursive;
+  color: #ecc104;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+
+.boton--primario {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+@media (max-width: 1024px) {
+  .contenedor {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (auto)[6];
+        grid-template-rows: repeat(6, auto);
+  }
+  .header {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    grid-column: -1;
+    height: 150px;
+  }
+  .navegacion {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    grid-column: -1;
+  }
+  .contenido {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    grid-column: -1;
+  }
+  .sidebar {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    grid-column: -1;
+  }
+  .sidebar img {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+  }
+  .sidebar .tamanio {
+    width: 100px;
+  }
+  .contexto {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    grid-column: -1;
+  }
+  .contexto__libros h4 {
+    font-size: 1.8rem;
+  }
+  .pelis > iframe {
+    width: 600px;
+    height: 400px;
+  }
+  .footer {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    grid-column: -1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px 0;
+    width: auto;
+  }
+  .redes img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .sauron {
+    margin-left: 10px;
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  .navegacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contexto__libros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .redes img {
+    width: 75px;
+    margin-left: 15px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 720px) {
+  .header h1 {
+    font-size: 3.2rem;
+  }
+  .header .sauron {
+    margin-left: 5px;
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  .pelis > iframe {
+    width: 350px;
+    height: 200px;
+  }
+  .sidebar__img > img {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 150px;
+  }
+  .header h1 {
+    font-size: 2.8rem;
+  }
+  .header .sauron {
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  .contenido > h2 {
+    font-size: 2.6rem;
+  }
+  .sidebar > h3 {
+    padding: 15px 0;
+  }
+  .sidebar img {
+    width: 200px;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+  }
+  .pelis iframe {
+    width: 250px;
+    height: 150px;
+  }
+  .pelis h3 {
+    font-size: 1.6rem;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-parrafo > p {
+    font-size: 1.4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
